@@ -1,0 +1,34 @@
+.project-section {
+  height: 100vh;
+  font-size: 60px;
+  display: block;
+  color: rgb(221, 217, 217);
+  strong {
+    padding-left: 20px;
+  }
+
+  background-color: #255674;
+  .project-container {
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    .img-container {
+      width: 250px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .job-container {
+    font-size: 30px;
+    text-align: left;
+    li {
+      font-size: 25px;
+      padding-left: 10px;
+      list-style-type: none;
+    }
+  }
+}
