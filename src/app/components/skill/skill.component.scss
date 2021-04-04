@@ -1,0 +1,43 @@
+@mixin repeat($input) {
+  display: grid;
+  grid-template-columns: repeat($input, 1fr);
+  place-items: center;
+  font-size: 30px;
+}
+
+.skill-section{
+  height: 100vh;
+  display: flexbox;
+  place-items: center;
+  font-size: 60px;
+  .skill-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    // gap: 10px;
+
+    .language {
+
+      @include repeat(3);
+    }
+
+    .framework {
+      @include repeat(3);
+    }
+
+    .sql {
+      @include repeat(3);
+    }
+    .OS {
+      @include repeat(3);
+    }
+    .devOps {
+
+      @include repeat(3);
+    }
+  }
+}
+
+img {
+  width: 150px;
+}
